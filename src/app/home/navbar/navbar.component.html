@@ -1,0 +1,63 @@
+
+<div class="navbar1">
+    <div class="navbar1-logo">
+    <button [cdkMenuTriggerFor]="menu1" class="example-standalone-trigger"><img class = "sidebaricon"src="../../../assets/sidebaricon.png" alt=""></button>
+
+    <ng-template #menu1>
+      <div class="example-menu" cdkMenu>
+        <a  class="example-menu-item1" href="">Home</a>
+        <a  class="example-menu-item1" href="">Shorts</a>
+        <a class="example-menu-item1" href="">Subscription</a>
+        <a class="example-menu-item1" href="">Library</a>
+        <a class="example-menu-item1" href="">Watched Later</a>
+        <a class="example-menu-item1" href="">Liked Videos</a>
+        <br>
+        <a class="example-menu-item1" href=""><h4>Explore</h4></a>
+        <a class="example-menu-item1" href="">Trending</a>
+        <a class="example-menu-item1" href="">Shopping</a>
+        <a class="example-menu-item1" href="">Music</a>
+        <a class="example-menu-item1" href="">Films</a>
+        <br>
+        <a class="example-menu-item1" href=""><h4>Live</h4></a>
+        <a class="example-menu-item1" href="">Gaming</a>
+        <a class="example-menu-item1" href="">News</a>
+        <a class="example-menu-item1" href="">Sport</a>
+        <a class="example-menu-item1" href="">learning</a>
+        <a class="example-menu-item1" href="">Fashion</a>
+        <a class="example-menu-item1" href="">Gaming</a>
+        <br>
+        <a class="example-menu-item1" href=""><h4>More on youtube</h4></a>
+        <a class="example-menu-item1" href="">Youtube Premimum</a>
+        <a class="example-menu-item1" href="">Youtube Kids</a>
+        <a class="example-menu-item1" href="">Youtbe Music</a>
+      </div>
+    </ng-template>
+    
+        <a class="logo1" href="/home"><img class="logo1img" src="../../../assets/logo1.jpg" alt="logo not found"></a>
+  
+    </div >
+      <div class="navbar-searchbar">
+    <mat-form-field class="navbar-searchbar1">
+      <input #searchbarvalue matInput placeholder="Search Here" value="">
+    </mat-form-field>   
+  
+     <a (click)="onsearchclick(searchbarvalue.value)" class="navbar-button2" color="warn" mat-button routerLink=".">Search</a>
+    
+</div>
+
+   <div class="navbar-lastbutton">
+    <button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger"><img class="signinlogo" src="../../../assets/8121295.png" alt=""></button>
+
+<ng-template #menu>
+  <div class="example-menu" cdkMenu>
+    <button class="example-menu-item" cdkMenuItem>Refresh</button>
+    <button class="example-menu-item" cdkMenuItem>Settings</button>
+    <button class="example-menu-item" cdkMenuItem>Help</button>
+    <button class="example-menu-item" cdkMenuItem>Sign out</button>
+  </div>
+  
+</ng-template>
+</div>
+</div>
+
+

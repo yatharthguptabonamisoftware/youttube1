@@ -1,0 +1,24 @@
+<div class="cards-container">
+<div class="cards" *ngFor="let card of contentlist">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title> {{card.snippet.channelTitle}}</mat-card-title>
+          <mat-card-subtitle>{{card.snippet.title}}</mat-card-subtitle>
+        </mat-card-header>
+        <!-- <img mat-card-image src="{{card.snippet.thumbnails.high.url}}" alt="Photo of a Shiba Inu"> -->
+        <!-- <a href="youtube"><img src="{{card.snippet.thumbnails.high.url}}" alt=""></a> -->
+        <vg-player>
+          <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
+              <source src=  "../../../assets/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+          </video>
+      </vg-player>
+        <mat-card-content>
+          <p>
+          {{card.snippet.description.slice(0,58)}}
+          </p>
+        </mat-card-content>
+      
+      </mat-card>
+    </div>
+</div>

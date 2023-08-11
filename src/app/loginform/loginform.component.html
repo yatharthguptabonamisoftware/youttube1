@@ -1,0 +1,28 @@
+
+<form class="login-form1">
+  <h1>Log In Form</h1>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input  required="" ngModel name="emailname" #emailname="ngModel" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="loginobj.email">
+      <div *ngIf="!emailname.valid && emailname.touched" class="alert alert-danger">First name is required</div>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input required="" ngModel name="passwordname" #passwordname ="ngModel" [type]="changetype?'password':'text'" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="loginobj.password">
+        <div *ngIf="!passwordname.valid && passwordname.touched" class="alert alert-danger" >Password is required</div>
+
+            <br>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="oncheckboxclick()">
+              <label class="form-check-label" for="exampleCheck1">Show Password</label>
+            </div>
+          <br>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="loginformsubmit()">Submit</button>
+    
+    <a style="margin-left: 300px;" routerLink="/signupform">Sign Up</a>
+  </form>
