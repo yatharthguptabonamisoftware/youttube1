@@ -1,0 +1,108 @@
+
+.navbar1{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.navbar-searchbar1{
+    display: flex;
+    width: 700px;
+    height: 70px;
+    
+  }
+  .navbar-searchbar{
+    display: flex;
+    margin-top: 20px;
+    width: 30%;
+  }
+  .sidebaricon{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+  }
+  .navbar-button1{
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left:10px;
+  }
+  .navbar1-logo{
+    display: flex;;
+    
+  }
+  .navbar-button2{
+    margin-top:10px;
+  }
+  .signinlogo{
+    height: 50px;
+    width: 50px;
+  }
+
+  .logo1{
+    height: 90px;
+    width: 90px;
+  }
+  .logo1img{
+    height: 100px;
+    width: 200px;
+  }
+  .example-menu {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 180px;
+    max-width: 280px;
+    background-color: rgba(255, 255, 255);
+    padding: 6px 0;
+  }
+
+  .example-menu-item1{
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+  }
+
+ 
+  .example-menu {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 180px;
+    max-width: 280px;
+    background-color: rgba(255, 255, 255);
+    padding: 6px 0;
+  }
+  
+  .example-menu-item,
+  .example-standalone-trigger {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  
+    user-select: none;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+  }
+  
+  .example-menu-item:hover {
+    background-color: rgb(208, 208, 208);
+  }
+  
+  .example-menu-item:active {
+    background-color: rgb(170, 170, 170);
+  }
+  
+  .example-standalone-item {
+    background-color: rgb(239, 239, 239);
+  }
+  .example-standalone-item:hover {
+    background-color: rgb(208, 208, 208);
+  }
+  .example-standalone-item[aria-expanded='true'] {
+    background-color: rgb(208, 208, 208);
+  }
